@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+.break1 {
+    padding-bottom: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3); /* Bottom-only shadow */
+ 
+}
+
+
+
+
+.bg-primary {
+
+    background-color: rgb(15, 18, 29) !important;
+
+
+    
+}
+
+
+
+
+.navbar-brand {
+   
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 1rem;
+    
+    
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem; /* Adjust size for the navigation links */
+    font-weight: lighter;
+}
+
+
+.heroSection {
+    position: relative;
+    height: 600px; /* Set height */
+    display: flex; /* Optional: Flexbox for alignment */
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px; /* Adds spacing between the description and the picture */
+    overflow: hidden;
+}
+
+
+
+.heroDescription, .heroPic {
+    position: relative; /* Ensure they stay above the gradient */
+    z-index: 2; /* Layer above pseudo-elements */
+    
+}
+
+.heroDescription {
+    flex: 1; /* Allows this section to grow and occupy available space */
+    text-align: left; /* Aligns the text to the left */
+    color: rgb(227, 225, 225);
+    margin-bottom: 10%;
+}
+
+
+
+.heroDescription h1 {
+    font-size: 7cap;
+}
+
+.heroDescription p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+.heroPic img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains the image's aspect ratio */
+    object-fit: contain; /* Ensures the image fits inside its container */
+    align-self: flex-end; /* Aligns the image to the bottom */
+    max-height: 600px !important; /* Optional: Restricts the image height */
+}
+
+.py-4 {
+    padding-bottom: 0 !important;
+}
+
+.heroDescription .btn {
+    margin-top: 4%;
+}
+
+.btn-square-corners {
+    border-radius: 0; /* Removes rounded corners */
+}
+
+
+
+.nav2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.nav-tabs .nav-link {
+    background-color: transparent; /* Ensure the link background remains transparent */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: inherit; /* Keep default border for active link */
+}
+
+
+.firstTab {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the children */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add some spacing between the elements */
+    margin: 20px 0; /* Optional: Add margin around the section */
+}
+
+.tab1Left {
+    flex: 1; /* Ensure both sides share space equally */
+}
+
+.tab1Right {
+    flex: 1;
+    text-align: center; /* Center the image inside the container */
+}
+
+.tab1Right img {
+    max-width: 400px; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Animation STARTS READ READ READ */
+.container2 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures elements don't spill outside */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0px 2px 8px rgba(45, 44, 44, 0.3); /* Bottom-only shadow */
+}
+  
+.twoSquares {
+    position: relative;
+    width: 100%;
+    max-width: 1300px; /* Adjust width as needed */
+    display: flex;
+    justify-content: space-between;
+}
+
+.twoSquares h1 {
+    font-size: 105px;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -8px;
+    border-bottom: 1px solid rgb(166, 165, 165);
+    padding-bottom: 5px;
+}
+
+.squareL p {
+    color: rgb(39, 38, 38);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+  .button2 {
+    border: solid black 1px;
+    padding: 2em;
+    padding-bottom: 0;
+    padding-top: .8em;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: black;
+    background-color: white;
+    margin-top: 40px;
+  }
+
+  .button2:hover {
+    background-color: black !important;
+    color: white !important;
+    cursor: pointer;
+  }
+
+.button2:hover p, 
+.button2:hover span {
+    color: white !important;
+}
+
+  
+
+  .button p {
+    font-size: 1.1rem;
+  }
+  
+  .squareL, .squareR {
+    width: 600px; /* Adjust size as needed */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .squareR img {
+
+    max-height: 480px;
+    /* nothing yet.  */
+  }
+  
+  .squareL {
+    animation-name: slideInLeft;
+    animation-play-state: paused;
+    width: 600px;
+
+  }
+  
+  .squareR {
+    animation-name: slideInRight;
+    animation-play-state: paused;
+
+  }
+  
+  /* Keyframes for squareL */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100vw); /* Start completely off-screen to the left */
+    }
+    to {
+      transform: translateX(0); /* End at its position in the layout */
+    }
+  }
+  
+  /* Keyframes for squareR */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100vw); /* Start completely off-screen to the right */
+    }
+    to {
+      transform: translateX(0); /* End at its position in the layout */
+    }
+  }
+  
+
+/* ENDSSSSSSS ANIMATION */
+
+
+
+
+@media (max-width: 768px) { /* Adjust for smaller screens */
+    .firstTab {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .tab1Right {
+        text-align: left; /* Align image container text to the left */
+    }
+}
+
+
+
+@media (max-width: 983px) {
+    .navbar-collapse {
+      padding-left: 3%; /* Adjust the value to move the menu to the right */
+    .nav-link {
+        padding-left: 10px; /* Optional: Adds spacing for individual links */
+      }
+    }
+
+    .container {
+        margin: 0;
+        max-width: 980px;
+    }
+
+    .navWrap {
+        border: none;
+        
+    }
+
+    .heroSection {
+
+        height: 500px;     
+        
+    }
+
+    .heroDescription {
+        vertical-align: bottom;
+        margin-left: 1%;
+
+    }
+
+    .heroDescription .btn {
+        margin-top: 3cap;
+        font-size: .8em;
+    }
+
+    .heroDescription h1 {
+        font-size: 4cap;
+    }
+
+    .heroPic {
+        max-width: 40%;
+        padding-right: 3%;
+    }
+
+    .twoSquares {
+        width: 98%;
+    }
+
+    .row {
+        width: 98%;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .twoSquares {
+        padding: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .squareL, .squareR {
+        width: 100%; /* Ensure full width for each section */
+        text-align: center; /* Optional: Center-align content */
+    }
+
+    .squareR img {
+        width: 100%; /* Make the image responsive */
+        max-width: 600px; /* Optional: Limit maximum image size */
+    }
+
+    .squareR {
+        margin-top: 30px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+   
+    .tab1Right img {
+        max-width: 98%;
+    }
+    
+    .heroDescription {
+        margin-bottom: 5%;
+    }
+
+    .heroDescription h1 {
+        font-size: 3cap;
+    }
+
+    .heroDescription h2 {
+        font-size: 2cap;
+    }
+
+    .heroPic {
+        max-width: 60%;
+    }
+
+    .twoSquares h1 {
+        font-size: 80px;
+    }
+
+    .squareL p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+   .heroDescription .btn {
+
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+
+   }
+
+   .heroPic {
+    max-width: 30%;
+}
+    
+
+}
