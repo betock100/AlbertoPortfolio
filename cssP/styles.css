@@ -254,6 +254,21 @@
 
 /* ENDSSSSSSS ANIMATION */
 
+.container3 {
+    background-image: url('../images/background1.jpg');
+    background-size: cover; /* Adjusts image to cover the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    height: 400px; /* Optional: Sets height to fill viewport */
+    color: rgb(75, 73, 73); /* Optional: Adjusts text color for readability */
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container4 {
+    background-color: grey;
+}
 
 
 
@@ -325,6 +340,10 @@
 }
 
 @media (max-width: 1350px) {
+    
+    .heroPic {
+        max-width: 40%;
+    }
     .twoSquares {
         padding: 2%;
         flex-direction: column;
@@ -348,6 +367,16 @@
 }
 
 @media (max-width: 768px) {
+
+    .heroSection {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .heroDescription {
+        text-align: center;
+    }
    
     .tab1Right img {
         max-width: 98%;
@@ -367,6 +396,7 @@
 
     .heroPic {
         max-width: 60%;
+        align-items: center;
     }
 
     .twoSquares h1 {
@@ -386,9 +416,17 @@
 
    }
 
-   .heroPic {
-    max-width: 30%;
+   .heroDescription {
+    vertical-align: bottom;
+    margin-left: 0;
+
 }
+
+  
+
+    
+
+
     
 
 }
