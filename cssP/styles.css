@@ -269,24 +269,18 @@
     max-width: 1300px;
 }
 
-.card img {
-    border: none;
-}
+
 
 .container3 {
-    background-image: url('../images/background1.jpg');
-    background-size: cover; /* Adjusts image to cover the div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    height: 400px; /* Optional: Sets height to fill viewport */
-    color: rgb(75, 73, 73); /* Optional: Adjusts text color for readability */
-    background-color: black;
-    margin: 0;
-    overflow: hidden;
+    
+    background-color: #1A1A2E;
+    color: white;
+    height: 600px;
+    
 }
 
 .container4 {
-    background-color: grey;
+    background-color: black;
 }
 
 
@@ -303,6 +297,63 @@
 }
 
 
+
+
+@media (max-width: 1600px){
+    .container {
+        max-width: 1124px;
+      }
+      .heroPic img {
+        max-height: 500px !important;
+    }
+    .twoSquares {
+        max-width: 1124px;
+    }
+
+    .squareR img {
+        max-width: 100%;
+        padding-left: 15%;
+        
+    }
+
+    .squareL p {
+        
+        font-size: 1.2rem;
+        
+    }
+
+    .cardSections {
+        
+        max-width: 1124px;
+    }
+}
+
+@media (max-width: 1350px) {
+    
+    .heroPic {
+        max-width: 40%;
+    }
+   
+
+    .twoSquares h1 {
+        font-size: 85px;
+    }
+/**
+    .squareL, .squareR {
+        width: 100%; /* Ensure full width for each section */
+        /**text-align: center; /* Optional: Center-align content */
+    /**}**/
+
+    .squareR img {
+        width: 100%; /* Make the image responsive */
+        max-width: 600px; /* Optional: Limit maximum image size */
+    }
+
+    .squareR {
+        margin-top: 30px;
+    }
+    
+}
 
 @media (max-width: 983px) {
     .navbar-collapse {
@@ -348,21 +399,7 @@
         padding-right: 3%;
     }
 
-    .twoSquares {
-        width: 98%;
-    }
-
-    .row {
-        width: 98%;
-    }
-
-}
-
-@media (max-width: 1350px) {
     
-    .heroPic {
-        max-width: 40%;
-    }
     .twoSquares {
         padding: 2%;
         flex-direction: column;
@@ -375,15 +412,16 @@
     }
 
     .squareR img {
-        width: 100%; /* Make the image responsive */
-        max-width: 600px; /* Optional: Limit maximum image size */
+        padding-left: 0;
     }
 
-    .squareR {
-        margin-top: 30px;
+
+    .row {
+        width: 98%;
     }
-    
+
 }
+
 
 @media (max-width: 768px) {
 
@@ -402,7 +440,7 @@
     }
     
     .heroDescription {
-        margin-bottom: 5%;
+        margin: 5%;
     }
 
     .heroDescription h1 {
