@@ -263,8 +263,8 @@
 
 .cardSections {
     margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     
     max-width: 1300px;
 }
@@ -272,18 +272,46 @@
 
 
 .container3 {
-    
+    display: flex;
     background-color: #1A1A2E;
-    color: white;
+    color: rgb(231, 229, 229);
     height: 600px;
+    align-items: center;
+    flex-direction: column;
     
 }
+
+.Footer1 {
+    width: 1300px;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    
+}
+.svgFooter {
+    width: 40px;
+    height: auto;
+    stroke: rgb(198, 196, 196);
+    fill: rgb(231, 229, 229);
+    margin-top: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.svgFooter:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    color: #0077b5; /* Add color effect if desired */
+  }
+
+.icon-container {
+    display: flex;
+    gap: 1.5rem; /* Space between icons */
+    justify-content: center;
+    margin-top: 1rem; /* Space above the icons */
+  }
 
 .container4 {
     background-color: black;
 }
-
-
 
 @media (max-width: 768px) { /* Adjust for smaller screens */
     .firstTab {
